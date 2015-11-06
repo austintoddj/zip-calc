@@ -58,4 +58,4 @@ License
 Thanks
 ---------
 
-Couldn't have done this project without the help of (Comanche)[https://github.com/Comanche/]. His refactoring of the SQL search functionality made this possible. Thanks!
+Couldn't have done this project without the help of [Comanche](https://github.com/Comanche/). His refactoring of the SQL search functionality made this possible. Thanks!
