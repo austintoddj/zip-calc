@@ -54,3 +54,8 @@ License
 [GNU General Public License v2][4]
 
 [4]: http://opensource.org/licenses/GPL-2.0
+
+Thanks
+---------
+
+Couldn't have done this project without the help of (Comanche)[https://github.com/Comanche/]. His refactoring of the SQL search functionality made this possible. Thanks!
