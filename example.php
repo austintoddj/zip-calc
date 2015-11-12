@@ -3,20 +3,21 @@
     <title>PHP Zip Code Range and Distance Calculation Class for PostgreSQL</title>
 </head>
 <body>
+
+<h3>More Information</h3>
+<ul>
+    <li><a href="https://github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class">PHP-PostgreSQL-ZipCode-Class</a> source code and downloads on GitHub.</li>
+</ul>
+
 <?php
-
-include('./vendor/autoload.php');
-
+include('ZipCode.php');
 // connect to the pgSQL database with the zip code table
 $connectionString = "host=HOST port=PORT dbname=DBNAME user=USER password=PASSWORD";
 $dbConnection     = pg_connect($connectionString);
-
-Maps::setConnection($dbConnection);
-
+ZipCode::setConnection($dbConnection);
 // you can instantiate ZipCodesInCity with a zip code or with city and state
-$brooklyn_park = new Maps("55445");
-$minneapolis   = new Maps("Minneapolis, MN");
-
+$brooklyn_park = new ZipCode("55445");
+$minneapolis   = new ZipCode("Minneapolis, MN");
 /*
 You can get the distance to another location by specifying a zip code,
 city/state string, or another ZipCodesInCity object. You can specify whether you want
@@ -30,8 +31,6 @@ echo "Zip code <strong>$brooklyn_park</strong> is <strong>$distance1</strong> mi
 echo "Zip code <strong>$brooklyn_park</strong> is <strong>$distance2</strong> miles away from "
      . "the city <strong>Minneapolis, MN</strong><br/>";
 echo '<hr>';
-
-
 $distance1 = round($minneapolis->getDistanceTo("55109"), 2);
 $distance2 = round($minneapolis->getDistanceTo("Maplewood, MN"), 2);
 echo "Zip code <strong>$minneapolis</strong> is <strong>$distance1</strong> miles away from "
@@ -39,7 +38,6 @@ echo "Zip code <strong>$minneapolis</strong> is <strong>$distance1</strong> mile
 echo "Zip code <strong>$minneapolis</strong> is <strong>$distance2</strong> miles away from "
      . "the city <strong>Maplewood, MN</strong><br/>";
 echo '<hr>';
-
 /*
 You can get all of the zip codes within a distance range from the zip. Here we
 are doing all zip codes between 0 and 2 miles. The returned array contains the
@@ -52,17 +50,14 @@ foreach ($brooklyn_park->getZipsInRange(0, 15) as $miles => $zip) {
          . " <strong>$brooklyn_park</strong> ({$zip->getCounty()} county)<br/>";
 }
 echo '<hr>';
-
-
 /*
 You can get all of the zip codes within a city.
 */
 echo "<h2>Get all zip codes in Brooklyn Park, MN</h2>";
-$port = new Maps('Brooklyn Park, MN');
+$port = new ZipCode('Brooklyn Park, MN');
 foreach ($port->getZipsInCity() as $value) {
     var_dump($value);
 }
-
 ?>
 </body>
 </html>
