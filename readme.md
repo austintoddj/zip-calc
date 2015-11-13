@@ -4,7 +4,7 @@ PHP Zip Code Range and Distance Calculation for PostgreSQL
 **Calculate the distance between U.S. zip codes and find all zip codes within a 
 given distance of a known zip code.**
 
-This project was started as a PostgreSQL port of a zip code class originally written by [Micah Carrick](https://github.com/Quixotix/PHP-ZipCode-Class) in 2005. 
+This project was started to port a zip code class originally written by [Micah Carrick](https://github.com/Quixotix/PHP-ZipCode-Class) in 2005 from MySQL to PostgreSQL. 
 
 
 Zip Code Database
@@ -32,7 +32,7 @@ tweaked over the years when a zip code was missing or incorrect. This database
 is known to have some missing and inaccurate zip codes. 
 
 You can find the SQL script with the entire `zip_code` table in 
-`/data/obsolute/zip_code.sql`. If you do not have access to your database from 
+`/data/obsolete/zip_code.sql`. If you do not have access to your database from 
 the command line, such as using phpMyAdmin, you will have to split the script
 into multiple files and upload them one at a time.
 
