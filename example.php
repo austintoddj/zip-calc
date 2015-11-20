@@ -10,34 +10,44 @@
 </ul>
 
 <?php
+// Include the Zip Code Class
 include('ZipCode.php');
-// connect to the pgSQL database with the zip code table
+
+// Connect to the pgSQL database with the zip code table
 $connectionString = "host=HOST port=PORT dbname=DBNAME user=USER password=PASSWORD";
 $dbConnection     = pg_connect($connectionString);
+
 ZipCode::setConnection($dbConnection);
-// you can instantiate ZipCodesInCity with a zip code or with city and state
+
+// You can instantiate ZipCodesInCity with a zip code or with city and state
 $brooklyn_park = new ZipCode("55445");
 $minneapolis   = new ZipCode("Minneapolis, MN");
+
 /*
 You can get the distance to another location by specifying a zip code,
 city/state string, or another ZipCodesInCity object. You can specify whether you want
 to get the distance in miles or kilometers.
 */
 echo "<h2>Get the distance between 2 zip codes</h2>";
+
 $distance1 = round($brooklyn_park->getDistanceTo("55404"), 2);
 $distance2 = round($brooklyn_park->getDistanceTo("Minneapolis, MN"), 2);
+
 echo "Zip code <strong>$brooklyn_park</strong> is <strong>$distance1</strong> miles away from "
      . "zip code <strong>55404</strong><br/>";
 echo "Zip code <strong>$brooklyn_park</strong> is <strong>$distance2</strong> miles away from "
      . "the city <strong>Minneapolis, MN</strong><br/>";
 echo '<hr>';
+
 $distance1 = round($minneapolis->getDistanceTo("55109"), 2);
 $distance2 = round($minneapolis->getDistanceTo("Maplewood, MN"), 2);
+
 echo "Zip code <strong>$minneapolis</strong> is <strong>$distance1</strong> miles away from "
      . "zip code <strong>55109</strong><br/>";
 echo "Zip code <strong>$minneapolis</strong> is <strong>$distance2</strong> miles away from "
      . "the city <strong>Maplewood, MN</strong><br/>";
 echo '<hr>';
+
 /*
 You can get all of the zip codes within a distance range from the zip. Here we
 are doing all zip codes between 0 and 2 miles. The returned array contains the
@@ -50,6 +60,7 @@ foreach ($brooklyn_park->getZipsInRange(0, 15) as $miles => $zip) {
          . " <strong>$brooklyn_park</strong> ({$zip->getCounty()} county)<br/>";
 }
 echo '<hr>';
+
 /*
 You can get all of the zip codes within a city.
 */
