@@ -1,4 +1,4 @@
-PHP Zip Code Range and Distance Calculation for PostgreSQL
+Zip code range and distance calculations using PHP and PostgreSQL
 ===========================================
 
 **Calculate the distance between U.S. zip codes and find all zip codes within a 
