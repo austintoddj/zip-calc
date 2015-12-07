@@ -1,61 +1,61 @@
-Zip code range and distance calculations using PHP and PostgreSQL
-===========================================
+## Zip code range and distance calculations using PHP and PostgreSQL
 
-**Calculate the distance between U.S. zip codes and find all zip codes within a 
-given distance of a known zip code.**
+#### Purpose
 
-This project was started to convert a zip code class originally written by [Micah Carrick](https://github.com/Quixotix/PHP-ZipCode-Class) in 2005 from MySQL to PostgreSQL. 
+* This project was started to convert a zip code class originally written by [Micah Carrick](https://github.com/Quixotix/PHP-ZipCode-Class) in 2005 from MySQL to PostgreSQL.
 
+* This class calculates the distance between U.S. zip codes and finds all zip codes within a 
+given distance of a known zip code.
 
-Zip Code Database
------------------
+#### Database Structure
 
-The `ZipCode` class is based on a PostgreSQL table or view with the following fields:
+The `CREATE` syntax for the table used in the example is as follows:
 
-    zip_code_id      int(11) PRIMARY KEY
-    zip_code         varchar(5) UNIQUE KEY
-    city             varchar(50)
-    county           varchar(50)
-    state_name       varchar(50)
-    state_prefix     varchar(2)
-    area_code        varchar(3)
-    time_zone        varchar(50)
-    lat              float
-    lon              float
+```sql
+CREATE TABLE "public"."maps" (
+    zip_code_id  SERIAL PRIMARY KEY,
+    zip_code TEXT NOT NULL,
+    city TEXT NOT NULL,
+    county TEXT NOT NULL,
+    state_name TEXT NOT NULL,
+    state_prefix TEXT NOT NULL,
+    area_code TEXT NOT NULL,
+    time_zone TEXT NOT NULL,
+    lat NUMERIC(10,7) NOT NULL,
+    lon NUMERIC(10,7) NOT NULL
+);
+```
 
-The default name for this table is `zip_code`.
+#### Step 1: Clone the Repository
 
-**Original Database (obsolete)**
+```sh
+https://github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class.git
+```
 
-The original zip code database was derived from 2000 U.S. Census data and manually
-tweaked over the years when a zip code was missing or incorrect. This database
-is known to have some missing and inaccurate zip codes. 
+#### Step 2: Composer
 
-You can find the SQL script with the entire `zip_code` table in 
-`/data/obsolete/zip_code.sql`. If you do not have access to your database from 
-the command line, such as using phpMyAdmin, you will have to split the script
-into multiple files and upload them one at a time.
+Run composer install to allow for autoloading. If you don't have Composer installed on your machine, you can find instructions on how to download it [here](https://getcomposer.org/doc/00-intro.md#globally).
 
-**New Databases**
+#### Step 3: Create the Database
 
-There are numerous sources for U.S. zip code databases. Some are free and some 
-can be purchased. You can use one of these databases by either copying the 
-necessary fields from the source table to the `zip_code` table.
+Once inside the `psql` command line, import the `maps.sql` database included in the project. If you need some assistance on getting up and running with a PgSQL database, find more out about it [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04).
 
-Demo
----------
+#### Step 4: Update the Credentials
 
-See `example.php` for example usage.
+In the `example.php` file, you will need to update the `$connectionString`.
 
+#### Step 5: Run the Example
 
-License
--------
+If you followed the steps up to this point correctly, when you access `example.php` from a browser you should see the following:
+
+![Example Screenshot](https://raw.github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class/master/images/pgsql-screen.png)
+
+#### License
 
 [GNU General Public License v2][4]
 
 [4]: http://opensource.org/licenses/GPL-2.0
 
-Thanks
----------
+#### Thanks
 
 Couldn't have done this project without the help of [Comanche](https://github.com/Comanche/). His help in refactoring the SQL search functions made this possible. Thanks!
