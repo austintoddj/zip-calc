@@ -34,7 +34,7 @@ https://github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class.git
 
 #### Step 2: Composer
 
-Run composer install to allow for autoloading. If you don't have Composer installed on your machine, you can find instructions on how to download it [here](https://getcomposer.org/doc/00-intro.md#globally).
+Run `composer install` to allow autoloading. If you don't have Composer installed on your machine, you can find instructions on how to download it [here](https://getcomposer.org/doc/00-intro.md#globally).
 
 #### Step 3: Create the Database
 
