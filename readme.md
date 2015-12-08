@@ -29,7 +29,7 @@ CREATE TABLE "public"."maps" (
 #### Step 1: Clone the Repository
 
 ```sh
-https://github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class.git
+git clone https://github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class.git
 ```
 
 #### Step 2: Composer
