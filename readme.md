@@ -36,9 +36,9 @@ git clone https://github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class.git
 
 Run `composer install` to allow autoloading. If you don't have Composer installed on your machine, you can find instructions on how to download it [here](https://getcomposer.org/doc/00-intro.md#globally).
 
-#### Step 3: Create the Database
+#### Step 3: PgSQL Import
 
-Once inside the `psql` command line, import the `maps.sql` database included in the project. If you need some assistance on getting up and running with a PgSQL database, find more out about it [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04).
+Once inside your database, import the `maps.sql` table included in the project. If you need some assistance on getting up and running with a PgSQL database, find more out about it on [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04).
 
 #### Step 4: Update the Credentials
 
@@ -46,7 +46,7 @@ In the `example.php` file, you will need to update the `$connectionString`.
 
 #### Step 5: Run the Example
 
-If you followed the steps up to this point correctly, when you access `example.php` from a browser you should see the following:
+If you followed the steps up to this point correctly, you should see the following when you access `example.php` from a browser :
 
 ![Example Screenshot](https://raw.github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class/master/images/pgsql-screen.png)
 
