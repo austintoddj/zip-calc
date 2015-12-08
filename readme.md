@@ -2,7 +2,7 @@
 
 #### Purpose
 
-* This project was started to convert a zip code class originally written by [Micah Carrick](https://github.com/Quixotix/PHP-ZipCode-Class) in 2005 from MySQL to PostgreSQL.
+* This project was started to convert a zip code class originally written by [Quixotix](https://github.com/Quixotix/PHP-ZipCode-Class) in 2005 from MySQL to PostgreSQL.
 
 * This class calculates the distance between U.S. zip codes and finds all zip codes within a 
 given distance of a known zip code.
