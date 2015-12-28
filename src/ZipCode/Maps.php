@@ -44,9 +44,9 @@ class Maps extends ZipCode {
     }
 
     /**
-     *  Class ZipCodesInCity
+     *  Get Zips in City
      *
-     *  This class provides a list of zip codes within a city if a city and state_prefix are given.
+     *  Provides a list of zip codes within a city if a city and state_prefix are given.
      *
      * @return  array
      */
