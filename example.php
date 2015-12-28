@@ -44,7 +44,7 @@
 
         ?>
 
-        <h2>Distance Between Zip Codes</h2>
+        <h2>Get distance between 2 zip codes</h2>
 
         <hr>
 
@@ -73,8 +73,8 @@
         <?php
 
         /*
-         * You can get all of the zip codes within a distance range from the zip. Here we
-         * 8are doing all zip codes between 0 and 2 miles. The returned array contains the
+         * You can get all of the zip codes within a distance radius from the zip. Here we
+         * are getting all zip codes between 0 and 15 miles. The returned array contains the
          * distance as the array's key and the array element is another ZipCodesInCity object.
          */
         echo "<h2>Get all zip codes within 15 miles from 55445 (<i>" . count($brooklyn_park->getZipsInRange(0, 15)) . "</i>)</h2>";
