@@ -5,7 +5,7 @@
 * This project was started to convert a zip code class originally written by [Quixotix](https://github.com/Quixotix/PHP-ZipCode-Class) in 2005 from MySQL to PostgreSQL.
 
 * This class calculates the distance between U.S. zip codes and finds all zip codes within a 
-given distance of a known zip code.
+given radius of a known zip code.
 
 #### Database Structure
 
@@ -38,7 +38,7 @@ Run `composer install` to allow autoloading. If you don't have Composer installe
 
 #### Step 3: PgSQL Import
 
-Once inside your database, import the `maps.sql` table included in the project. If you need some assistance on getting up and running with a PgSQL database, find more out about it on [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04).
+Once inside your database, import the `maps.sql` table included in the project. If you need some assistance on getting up and running with a PgSQL database, find out more on [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04).
 
 #### Step 4: Update the Credentials
 
