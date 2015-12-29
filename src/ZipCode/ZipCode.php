@@ -18,7 +18,7 @@ use Exception;
  * @author         Todd Austin
  * @copyright      (c) 2015 - Todd Austin
  * @version        1.0
- * @license        http://opensource.org/licenses/gpl-3.0.html GNU General Public License v3
+ * @license        http://opensource.org/licenses/GPL-2.0
  */
 class ZipCode {
     /**
