@@ -12,13 +12,12 @@ use Exception;
  * Calculate the distance between zip codes and find all zip codes within a
  * given distance of a known zip code.
  *
- * Project page: https://github.com/Quixotix/PHP-ZipCode-Class
- * Live example: http://www.micahcarrick.com/code/PHP-ZipCode/example.php
+ * Project page: https://github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class
  *
  * @package        zipcode
- * @author         Micah Carrick
- * @copyright  (c) 2011 - Micah Carrick
- * @version        2.0
+ * @author         Todd Austin
+ * @copyright      (c) 2015 - Todd Austin
+ * @version        1.0
  * @license        http://opensource.org/licenses/gpl-3.0.html GNU General Public License v3
  */
 class ZipCode {
