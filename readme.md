@@ -50,10 +50,6 @@ If you followed the steps up to this point correctly, you should see the followi
 
 ![Example Screenshot](https://raw.github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class/master/images/pgsql-screen.png)
 
-#### License
-
-[GNU General Public License v2][4]
-
 [4]: http://opensource.org/licenses/GPL-2.0
 
 #### Thanks
