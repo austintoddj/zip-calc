@@ -1,5 +1,9 @@
 ## Zip code range and distance calculations using PHP and PostgreSQL
 
+[![Total Downloads](https://poser.pugx.org/austintoddj/php-postgresql-zipcode-class/downloads)](https://packagist.org/packages/austintoddj/php-postgresql-zipcode-class) 
+[![Latest Stable Version](https://poser.pugx.org/austintoddj/php-postgresql-zipcode-class/v/stable)](https://packagist.org/packages/austintoddj/php-postgresql-zipcode-class) 
+[![Latest Unstable Version](https://poser.pugx.org/austintoddj/php-postgresql-zipcode-class/v/unstable)](https://packagist.org/packages/austintoddj/php-postgresql-zipcode-class) [![License](https://poser.pugx.org/austintoddj/php-postgresql-zipcode-class/license)](https://packagist.org/packages/austintoddj/php-postgresql-zipcode-class)
+
 #### Purpose
 
 * This project was started to convert a zip code class originally written by [Quixotix](https://github.com/Quixotix/PHP-ZipCode-Class) in 2005 from MySQL to PostgreSQL.
