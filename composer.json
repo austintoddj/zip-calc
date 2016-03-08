@@ -1,4 +1,16 @@
 {
+    "name": "austintoddj/php-postgresql-zipcode-class",
+    "description": "Zip Code Range And Distance Calculations Using PHP And PostgreSQL.",
+    "keywords": ["php", "postgresql", "zipcode"],
+    "license": "GPL-2.0",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Todd Austin",
+            "email": "austin.todd.j@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
     },
     "autoload": {
