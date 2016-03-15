@@ -30,7 +30,17 @@ CREATE TABLE "public"."maps" (
 );
 ```
 
-#### Step 1: Clone the Repository
+#### Step 1: Install the Project
+
+Getting a new instance of this project up and running is simple. You can choose either of the following options:
+
+Use Composer:
+
+```sh
+composer create-project austintoddj/php-postgresql-zipcode-class
+```
+
+Download the repository:
 
 ```sh
 git clone https://github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class.git
