@@ -34,19 +34,21 @@ CREATE TABLE "public"."maps" (
 
 Getting a new instance of this project up and running is simple. You can choose either of the following options:
 
-Use Composer:
+Option 1 - Use Composer:
 
 ```sh
 composer create-project austintoddj/php-postgresql-zipcode-class
 ```
 
-Download the repository:
+Option 2 - Download the repository:
 
 ```sh
 git clone https://github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class.git
 ```
 
 #### Step 2: Composer
+
+If you chose option 1 for downloading, skip this step. If you chose option 2, run `composer` in the project root:
 
 Run `composer install` to allow autoloading. If you don't have Composer installed on your machine, you can find instructions on how to download it [here](https://getcomposer.org/doc/00-intro.md#globally).
 
