@@ -71,3 +71,7 @@ If you followed the steps up to this point correctly, you should see the followi
 #### Thanks
 
 Couldn't have done this project without the help of [Comanche](https://github.com/Comanche/). His help in refactoring the SQL search functions made this possible. Thanks!
+
+#### License
+
+PHP-PostgreSQL-ZipCode-Class is an open-sourced project licensed under the [MIT license](https://opensource.org/licenses/MIT).
