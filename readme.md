@@ -1,19 +1,10 @@
-## Zip code range and distance calculations using PHP and PostgreSQL
+## About Zip-Calc
 
-[![Total Downloads](https://poser.pugx.org/austintoddj/php-postgresql-zipcode-class/downloads)](https://packagist.org/packages/austintoddj/php-postgresql-zipcode-class) 
-[![Latest Stable Version](https://poser.pugx.org/austintoddj/php-postgresql-zipcode-class/v/stable)](https://packagist.org/packages/austintoddj/php-postgresql-zipcode-class) 
-[![Latest Unstable Version](https://poser.pugx.org/austintoddj/php-postgresql-zipcode-class/v/unstable)](https://packagist.org/packages/austintoddj/php-postgresql-zipcode-class) [![License](https://poser.pugx.org/austintoddj/php-postgresql-zipcode-class/license)](https://packagist.org/packages/austintoddj/php-postgresql-zipcode-class)
+Zip-Calc was created to convert a PHP class written by [Quixotix](https://github.com/Quixotix/PHP-ZipCode-Class) in 2005 from MySQL to PostgreSQL. This class calculates the distance between U.S. zipcodes and also finds all of the zipcodes within a 9 given radius of a known zipcode.
 
-#### Purpose
+## Database
 
-* This project was started to convert a zip code class originally written by [Quixotix](https://github.com/Quixotix/PHP-ZipCode-Class) in 2005 from MySQL to PostgreSQL.
-
-* This class calculates the distance between U.S. zip codes and finds all zip codes within a 
-given radius of a known zip code.
-
-#### Database Structure
-
-The `CREATE` syntax for the table used in the example is as follows:
+The `CREATE` syntax for the database table used in the example is as follows:
 
 ```sql
 CREATE TABLE "public"."maps" (
@@ -30,48 +21,28 @@ CREATE TABLE "public"."maps" (
 );
 ```
 
-#### Step 1: Install the Project
+## Installation
 
 Getting a new instance of this project up and running is simple. You can choose either of the following options:
-
-Option 1 - Use Composer:
 
 ```sh
 composer create-project austintoddj/php-postgresql-zipcode-class
 ```
 
-Option 2 - Download the repository:
+## Step 3: PgSQL Import
 
-```sh
-git clone https://github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class.git
-```
+Once inside your database, import the `data/maps.sql` file included in the project. If you need some assistance on getting up and running with a PgSQL database, find out more on [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04).
 
-#### Step 2: Composer
-
-If you chose Option 1 for downloading, skip this step. If you chose Option 2, run `composer` in the project root:
-
-Run `composer install` to allow autoloading. If you don't have Composer installed on your machine, you can find instructions on how to download it [here](https://getcomposer.org/doc/00-intro.md#globally).
-
-#### Step 3: PgSQL Import
-
-Once inside your database, import the `maps.sql` table included in the project. If you need some assistance on getting up and running with a PgSQL database, find out more on [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04).
-
-#### Step 4: Update the Credentials
+## Step 4: Update the Credentials
 
 In the `example.php` file, you will need to update the `$connectionString`.
 
-#### Step 5: Run the Example
+## Step 5: Run the Example
 
-If you followed the steps up to this point correctly, you should see the following when you access `example.php` from a browser :
+If you followed the steps up to this point correctly, you should see the following when you access `example.php` from a browser:
 
-![Example Screenshot](https://raw.github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class/master/images/pgsql-screen.png)
+![Example Screenshot](https://raw.github.com/austintoddj/PHP-PostgreSQL-ZipCode-Class/master/images/example.png)
 
-[4]: http://opensource.org/licenses/GPL-2.0
+## License
 
-#### Thanks
-
-Couldn't have done this project without the help of [Comanche](https://github.com/Comanche/). His help in refactoring the SQL search functions made this possible. Thanks!
-
-#### License
-
-PHP-PostgreSQL-ZipCode-Class is an open-sourced project licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Zip-Calc is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
