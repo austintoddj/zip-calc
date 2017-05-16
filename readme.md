@@ -1,6 +1,6 @@
 ## About Zip-Calc
 
-Zip-Calc was created to convert a PHP class written by [Quixotix](https://github.com/Quixotix/PHP-ZipCode-Class) in 2005 from MySQL to PostgreSQL. This class calculates the distance between U.S. zipcodes and also finds all of the zipcodes within a 9 given radius of a known zipcode.
+Zip-Calc was created to convert a PHP class written by [Quixotix](https://github.com/Quixotix/PHP-ZipCode-Class) in 2005 from MySQL to PostgreSQL. This class calculates the distance between U.S. zip codes and also finds all of the zip codes within a 9 given radius of a known zip code.
 
 ## Database
 
@@ -26,7 +26,7 @@ CREATE TABLE "public"."maps" (
 Getting a new instance of this project up and running is simple. You can choose either of the following options:
 
 ```sh
-composer create-project austintoddj/php-postgresql-zipcode-class
+composer create-project austintoddj/zip-calc
 ```
 
 ## Step 3: PgSQL Import

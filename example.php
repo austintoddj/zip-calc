@@ -2,7 +2,7 @@
 
     <head>
 
-        <title>PHP PostgreSQL ZipCode Class</title>
+        <title>Zip Code Range and Distance Calculation Class</title>
 
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
