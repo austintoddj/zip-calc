@@ -23,7 +23,7 @@ CREATE TABLE "public"."maps" (
 
 ## Installation
 
-Getting a new instance of this project up and running is simple. You can choose either of the following options:
+Install the project via [Composer](https://getcomposer.org):
 
 ```sh
 composer create-project austintoddj/zip-calc
