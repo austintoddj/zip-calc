@@ -26,7 +26,7 @@ CREATE TABLE "public"."maps" (
 Install the project via [Composer](https://getcomposer.org):
 
 ```sh
-composer create-project austintoddj/zip-calc
+composer create-project austintoddj/php-postgresql-zipcode-class
 ```
 
 ## Step 3: PgSQL Import
